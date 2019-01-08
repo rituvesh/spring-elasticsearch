@@ -18,7 +18,7 @@ class ClassPathReaderTest {
 
     @Test
     void testReadFileInClasspath_ExpectFileNotFound_ReturnsNull() throws Exception {
-        String url = "__unknown_file_path_____";
+        String url = "__unknown_file_path____";
         String contents = SettingsReader.readFileFromClasspath(url);
         assertThat(contents, nullValue());
     }
